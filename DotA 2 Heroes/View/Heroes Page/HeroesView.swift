@@ -16,55 +16,30 @@ struct HeroesView: View {
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
-            VStack {
-                ScrollView {
-                    VStack(alignment: .leading, spacing: 8) {
-                        ZStack(alignment: .center) {
-                            ZStack {
-                                Color.gray
-                            }
-                            .frame(width: 320, height: 320, alignment: .center)
-                            .cornerRadius(160)
+            
+            self.loadImage(from: self.hero?.image ?? "", alternative: self.hero?.image2 ?? "", width: UIScreen.width, height: UIScreen.height, opacity: 0.15)
 
-                            AsyncImage(url: URL(string: hero?.image ?? "")) { phase in
-                                switch phase {
-                                case .empty:
-                                    ProgressView()
-                                case .success(let image):
-                                    image.resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(maxWidth: UIScreen.width, maxHeight: 300)
-                                case .failure:
-                                    AsyncImage(url: URL(string: hero?.image2 ?? "")) { phase in
-                                        switch phase {
-                                        case .empty:
-                                            ProgressView()
-                                        case .success(let image):
-                                            image.resizable()
-                                                .aspectRatio(contentMode: .fit)
-                                                .frame(maxWidth: UIScreen.width, maxHeight: 300)
-                                        case .failure:
-                                            EmptyView()
-                                        @unknown default:
-                                            EmptyView()
-                                        }
-                                    }
-                                @unknown default:
-                                    EmptyView()
-                                }
-                            }
+            VStack(alignment: .center, spacing: 4) {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 16) {
+                        Text("")
+                        Text("")
+                        Text("")
+
+                        ZStack(alignment: .center) {
+                            self.loadImage(from: APIConstant.URL.dotaIcon, width: UIScreen.width, height: 250)
+
+                            self.loadImage(from: self.hero?.image ?? "", alternative: self.hero?.image2 ?? "", width: UIScreen.width, height: UIScreen.height * 3 / 4)
                         }
+                        
                         Text("")
                         Text(hero?.name ?? "")
                             .foregroundColor(.white)
                             .font(.system(size: 32, weight: .bold))
-                        Text(hero?.desc ?? "")
+                        Text("- \(hero?.desc ?? "") -" )
                             .foregroundColor(.white)
                             .font(.system(size: 14, weight: .medium))
                             .italic()
-                        Text(hero?.bio ?? "")
-                            .foregroundColor(.white)
-                            .font(.system(size: 14))
                     }
                 }
                 Text("")
@@ -91,7 +66,7 @@ struct HeroesView: View {
         }
         .onAppear(perform: self.requestNextData)
     }
-    
+
     init(viewModel: HeroesVM!) {
         self.viewModel = viewModel
     }
@@ -113,6 +88,7 @@ struct HeroesView: View {
             }
         }
     }
+    
 }
 
 struct HeroesView_Previews: PreviewProvider {
