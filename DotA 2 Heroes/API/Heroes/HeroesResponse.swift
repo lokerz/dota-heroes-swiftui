@@ -28,6 +28,5 @@ struct Heroes: Decodable {
         case name = "name_loc"
         case desc = "npe_desc_loc"
         case bio = "bio_loc"
-        
     }
 }
