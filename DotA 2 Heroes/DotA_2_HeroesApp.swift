@@ -11,7 +11,10 @@ import SwiftUI
 struct DotA_2_HeroesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let api = HeroesAPI()
+            let service = HeroesService(heroesAPI: api)
+            let vm = HeroesVM(service: service)
+            HeroesView(viewModel: vm)
         }
     }
 }

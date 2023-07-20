@@ -8,17 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		0DB8BEF32A69129000525ED8 /* DotA_2_HeroesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BEF22A69129000525ED8 /* DotA_2_HeroesApp.swift */; };
-		0DB8BEF52A69129000525ED8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BEF42A69129000525ED8 /* ContentView.swift */; };
 		0DB8BEF72A69129300525ED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB8BEF62A69129300525ED8 /* Assets.xcassets */; };
 		0DB8BEFA2A69129300525ED8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB8BEF92A69129300525ED8 /* Preview Assets.xcassets */; };
+		0DB8BF0B2A6912B400525ED8 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF022A6912B400525ED8 /* APIConstant.swift */; };
+		0DB8BF0C2A6912B400525ED8 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF032A6912B400525ED8 /* APIService.swift */; };
+		0DB8BF0D2A6912B400525ED8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF042A6912B400525ED8 /* APIRouter.swift */; };
+		0DB8BF0F2A6912B400525ED8 /* HeroesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF072A6912B400525ED8 /* HeroesResponse.swift */; };
+		0DB8BF102A6912B400525ED8 /* HeroesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF082A6912B400525ED8 /* HeroesAPI.swift */; };
+		0DB8BF112A6912B400525ED8 /* Fetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF0A2A6912B400525ED8 /* Fetchable.swift */; };
+		0DB8BF142A69139C00525ED8 /* HeroesBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF132A69139C00525ED8 /* HeroesBody.swift */; };
+		0DB8BF182A69140E00525ED8 /* HeroesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF172A69140E00525ED8 /* HeroesView.swift */; };
+		0DB8BF1A2A69141800525ED8 /* HeroesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF192A69141800525ED8 /* HeroesVM.swift */; };
+		0DB8BF1C2A69145600525ED8 /* HeroesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF1B2A69145600525ED8 /* HeroesService.swift */; };
+		0DB8BF1E2A69149D00525ED8 /* HeroesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF1D2A69149D00525ED8 /* HeroesModel.swift */; };
+		0DB8BF212A692CD300525ED8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF202A692CD300525ED8 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0DB8BEEF2A69129000525ED8 /* DotA 2 Heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DotA 2 Heroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB8BEF22A69129000525ED8 /* DotA_2_HeroesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotA_2_HeroesApp.swift; sourceTree = "<group>"; };
-		0DB8BEF42A69129000525ED8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0DB8BEF62A69129300525ED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DB8BEF92A69129300525ED8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0DB8BF022A6912B400525ED8 /* APIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+		0DB8BF032A6912B400525ED8 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		0DB8BF042A6912B400525ED8 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		0DB8BF072A6912B400525ED8 /* HeroesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesResponse.swift; sourceTree = "<group>"; };
+		0DB8BF082A6912B400525ED8 /* HeroesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesAPI.swift; sourceTree = "<group>"; };
+		0DB8BF0A2A6912B400525ED8 /* Fetchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetchable.swift; sourceTree = "<group>"; };
+		0DB8BF132A69139C00525ED8 /* HeroesBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesBody.swift; sourceTree = "<group>"; };
+		0DB8BF172A69140E00525ED8 /* HeroesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesView.swift; sourceTree = "<group>"; };
+		0DB8BF192A69141800525ED8 /* HeroesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesVM.swift; sourceTree = "<group>"; };
+		0DB8BF1B2A69145600525ED8 /* HeroesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesService.swift; sourceTree = "<group>"; };
+		0DB8BF1D2A69149D00525ED8 /* HeroesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesModel.swift; sourceTree = "<group>"; };
+		0DB8BF202A692CD300525ED8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +73,11 @@
 		0DB8BEF12A69129000525ED8 /* DotA 2 Heroes */ = {
 			isa = PBXGroup;
 			children = (
+				0DB8BF1F2A692CC600525ED8 /* Extension */,
+				0DB8BF152A6913EB00525ED8 /* View */,
+				0DB8BF092A6912B400525ED8 /* Protocol */,
+				0DB8BF002A6912B400525ED8 /* API */,
 				0DB8BEF22A69129000525ED8 /* DotA_2_HeroesApp.swift */,
-				0DB8BEF42A69129000525ED8 /* ContentView.swift */,
 				0DB8BEF62A69129300525ED8 /* Assets.xcassets */,
 				0DB8BEF82A69129300525ED8 /* Preview Content */,
 			);
@@ -65,6 +90,70 @@
 				0DB8BEF92A69129300525ED8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0DB8BF002A6912B400525ED8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0DB8BF012A6912B400525ED8 /* Default */,
+				0DB8BF062A6912B400525ED8 /* Heroes */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0DB8BF012A6912B400525ED8 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				0DB8BF022A6912B400525ED8 /* APIConstant.swift */,
+				0DB8BF032A6912B400525ED8 /* APIService.swift */,
+				0DB8BF042A6912B400525ED8 /* APIRouter.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		0DB8BF062A6912B400525ED8 /* Heroes */ = {
+			isa = PBXGroup;
+			children = (
+				0DB8BF072A6912B400525ED8 /* HeroesResponse.swift */,
+				0DB8BF082A6912B400525ED8 /* HeroesAPI.swift */,
+				0DB8BF132A69139C00525ED8 /* HeroesBody.swift */,
+			);
+			path = Heroes;
+			sourceTree = "<group>";
+		};
+		0DB8BF092A6912B400525ED8 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0DB8BF0A2A6912B400525ED8 /* Fetchable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		0DB8BF152A6913EB00525ED8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DB8BF162A69140100525ED8 /* Heroes Page */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0DB8BF162A69140100525ED8 /* Heroes Page */ = {
+			isa = PBXGroup;
+			children = (
+				0DB8BF172A69140E00525ED8 /* HeroesView.swift */,
+				0DB8BF192A69141800525ED8 /* HeroesVM.swift */,
+				0DB8BF1B2A69145600525ED8 /* HeroesService.swift */,
+				0DB8BF1D2A69149D00525ED8 /* HeroesModel.swift */,
+			);
+			path = "Heroes Page";
+			sourceTree = "<group>";
+		};
+		0DB8BF1F2A692CC600525ED8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0DB8BF202A692CD300525ED8 /* String.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +226,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DB8BEF52A69129000525ED8 /* ContentView.swift in Sources */,
+				0DB8BF0F2A6912B400525ED8 /* HeroesResponse.swift in Sources */,
+				0DB8BF212A692CD300525ED8 /* String.swift in Sources */,
+				0DB8BF102A6912B400525ED8 /* HeroesAPI.swift in Sources */,
+				0DB8BF1C2A69145600525ED8 /* HeroesService.swift in Sources */,
+				0DB8BF142A69139C00525ED8 /* HeroesBody.swift in Sources */,
+				0DB8BF0D2A6912B400525ED8 /* APIRouter.swift in Sources */,
 				0DB8BEF32A69129000525ED8 /* DotA_2_HeroesApp.swift in Sources */,
+				0DB8BF0C2A6912B400525ED8 /* APIService.swift in Sources */,
+				0DB8BF112A6912B400525ED8 /* Fetchable.swift in Sources */,
+				0DB8BF1E2A69149D00525ED8 /* HeroesModel.swift in Sources */,
+				0DB8BF0B2A6912B400525ED8 /* APIConstant.swift in Sources */,
+				0DB8BF182A69140E00525ED8 /* HeroesView.swift in Sources */,
+				0DB8BF1A2A69141800525ED8 /* HeroesVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
