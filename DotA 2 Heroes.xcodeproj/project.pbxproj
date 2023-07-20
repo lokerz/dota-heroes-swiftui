@@ -22,6 +22,8 @@
 		0DB8BF1C2A69145600525ED8 /* HeroesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF1B2A69145600525ED8 /* HeroesService.swift */; };
 		0DB8BF1E2A69149D00525ED8 /* HeroesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF1D2A69149D00525ED8 /* HeroesModel.swift */; };
 		0DB8BF212A692CD300525ED8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF202A692CD300525ED8 /* String.swift */; };
+		0DB8BF232A69345700525ED8 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8BF222A69345700525ED8 /* UIScreen.swift */; };
+		0DCE34F42A696CCB002A662B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE34F32A696CCB002A662B /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		0DB8BF1B2A69145600525ED8 /* HeroesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesService.swift; sourceTree = "<group>"; };
 		0DB8BF1D2A69149D00525ED8 /* HeroesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesModel.swift; sourceTree = "<group>"; };
 		0DB8BF202A692CD300525ED8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		0DB8BF222A69345700525ED8 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		0DCE34F32A696CCB002A662B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				0DB8BF202A692CD300525ED8 /* String.swift */,
+				0DB8BF222A69345700525ED8 /* UIScreen.swift */,
+				0DCE34F32A696CCB002A662B /* View.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -228,9 +234,11 @@
 			files = (
 				0DB8BF0F2A6912B400525ED8 /* HeroesResponse.swift in Sources */,
 				0DB8BF212A692CD300525ED8 /* String.swift in Sources */,
+				0DCE34F42A696CCB002A662B /* View.swift in Sources */,
 				0DB8BF102A6912B400525ED8 /* HeroesAPI.swift in Sources */,
 				0DB8BF1C2A69145600525ED8 /* HeroesService.swift in Sources */,
 				0DB8BF142A69139C00525ED8 /* HeroesBody.swift in Sources */,
+				0DB8BF232A69345700525ED8 /* UIScreen.swift in Sources */,
 				0DB8BF0D2A6912B400525ED8 /* APIRouter.swift in Sources */,
 				0DB8BEF32A69129000525ED8 /* DotA_2_HeroesApp.swift in Sources */,
 				0DB8BF0C2A6912B400525ED8 /* APIService.swift in Sources */,

@@ -26,8 +26,9 @@ class HeroesService {
                 guard let data = response.result?.data?.heroes?.first else {return}
                 let model = HeroesModel(name: data.name ?? "",
                                         desc: data.desc ?? "",
-                                        bio: data.bio ?? "",
-                                        image: APIConstant.URL.imageBase + (data.name?.lowercased().removeAllButAlphabet() ?? "juggernaut") + ".png")
+                                        bio: data.bio?.replacingOccurrences(of: "<br>", with: "\n") ?? "",
+                                        image: APIConstant.URL.imageBase + (data.name?.lowercased().removeAllButAlphabet() ?? "") + ".png",
+                                        image2: APIConstant.URL.imageBase + (data.name?.lowercased().replacingOccurrences(of: " ", with: "_") ?? "") + ".png")
                 completion(.success(model))
             case .failure(let error):
                 completion(.failure(error))

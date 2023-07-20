@@ -12,5 +12,6 @@ struct HeroesModel {
     let desc: String
     let bio: String
     let image: String
+    let image2: String
 }
     
